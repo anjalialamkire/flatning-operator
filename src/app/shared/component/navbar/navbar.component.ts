@@ -8,10 +8,15 @@ import { AppRoutingModule } from "src/app/app-routing.module";
  
 })
 export class NavbarComponent implements OnInit {
-
+   isToggle:boolean = false
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onToggle()
+  {
+    this.isToggle = !this.isToggle
   }
 
 }
